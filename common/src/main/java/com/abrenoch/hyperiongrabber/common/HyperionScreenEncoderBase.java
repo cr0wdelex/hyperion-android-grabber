@@ -133,12 +133,12 @@ public class HyperionScreenEncoderBase {
 
     int getGrabberWidth() {
         // return INIT_ORIENTATION != mCurrentOrientation ? mHeightScaled : mWidthScaled;
-        return 426
+        return 426;
     }
 
     int getGrabberHeight() {
         // return INIT_ORIENTATION != mCurrentOrientation ? mWidthScaled : mHeightScaled;
-        return 240
+        return 240;
     }
 
     public void setOrientation(int orientation) {
