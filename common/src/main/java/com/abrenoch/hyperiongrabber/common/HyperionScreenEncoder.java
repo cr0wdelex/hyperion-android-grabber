@@ -47,13 +47,9 @@ public class HyperionScreenEncoder extends HyperionScreenEncoderBase {
     private void prepare() throws MediaCodec.CodecException {
         if (DEBUG) Log.d(TAG, "Preparing encoder");
 
-        int width = 640;
-        int height = 360;
-        
         mVirtualDisplay = mMediaProjection.createVirtualDisplay(
                 TAG,
-                //getGrabberWidth(), getGrabberHeight(), mDensity,
-                width, height, mDensity,
+                getGrabberWidth(), getGrabberHeight(), mDensity,
                 DisplayManager.VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR,
                 null, mDisplayCallback, null);
 
